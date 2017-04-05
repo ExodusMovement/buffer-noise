@@ -21,6 +21,7 @@
   "devDependencies": {
     "@tap-format/spec": "^0.2.0",
     "babel-eslint": "^7.2.1",
+    "flow-bin": "^0.43.0",
     "flow-remove-types": "^1.2.0",
     "standard": "^10.0.0",
     "tape": "^4.6.3"
