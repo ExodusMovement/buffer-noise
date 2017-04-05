@@ -1,0 +1,32 @@
+{
+  "name": "buffer-expand",
+  "version": "0.0.0",
+  "description": "Expand a buffer to a specified length",
+  "homepage": "https://github.com/ExodusMovement/buffer-expand#readme",
+  "bugs": {
+    "url": "https://github.com/ExodusMovement/buffer-expand/issues"
+  },
+  "license": "MIT",
+  "author": "Exodus Movement, Inc.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExodusMovement/buffer-expand.git"
+  },
+  "scripts": {
+    "build": "flow-remove-types index.js > dist.js",
+    "test": "standard && flow check && tape -r flow-remove-types/register test.js | tf-spec",
+    "posttest": "npm run build"
+  },
+  "devDependencies": {
+    "@tap-format/spec": "^0.2.0",
+    "babel-eslint": "^7.2.1",
+    "flow-remove-types": "^1.2.0",
+    "standard": "^10.0.0",
+    "tape": "^4.6.3"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": "dist.js"
+  }
+}
