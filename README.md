@@ -1,4 +1,6 @@
 # buffer-expand
+[![npm](https://img.shields.io/npm/v/buffer-expand.svg)](https://npmjs.com/package/buffer-expand)
+[![Travis branch](https://img.shields.io/travis/ExodusMovement/buffer-expand/master.svg)](https://travis-ci.org/ExodusMovement/buffer-expand)
 
 Expand a buffer to a specified length. If the buffer is smaller than the specified length, the remaining space is filled with random bytes. A 32-bit Unsigned Big-Endian Integer containing the length of the data is always prepended to the buffer.
 
