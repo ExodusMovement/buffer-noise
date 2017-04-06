@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "author": "Exodus Movement, Inc.",
-  "main": "index.js",
+  "main": "dist.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ExodusMovement/buffer-expand.git"
