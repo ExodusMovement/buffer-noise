@@ -15,7 +15,9 @@
   },
   "scripts": {
     "build": "flow-remove-types index.js > dist.js",
-    "test": "standard && flow check && tape -r flow-remove-types/register test.js | tf-spec",
+    "lint": "standard",
+    "test": "npm run lint && flow check && npm run unit",
+    "unit": "tape -r flow-remove-types/register test.js | tf-spec",
     "posttest": "npm run build"
   },
   "devDependencies": {
