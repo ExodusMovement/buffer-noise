@@ -8,15 +8,17 @@
   },
   "license": "MIT",
   "author": "Exodus Movement, Inc.",
-  "main": "dist.js",
+  "main": "./lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ExodusMovement/buffer-expand.git"
   },
   "scripts": {
-    "build": "flow-remove-types index.js > dist.js",
-    "test": "standard && flow check && tape -r flow-remove-types/register test.js | tf-spec",
-    "posttest": "npm run build"
+    "build": "flow-remove-types ./src/index.js > ./lib/index.js",
+    "lint": "standard",
+    "pretest": "npm run build",
+    "test": "npm run lint && flow check && npm run unit",
+    "unit": "tape -r flow-remove-types/register ./test/index.js | tf-spec"
   },
   "devDependencies": {
     "@tap-format/spec": "^0.2.0",
@@ -28,6 +30,6 @@
   },
   "standard": {
     "parser": "babel-eslint",
-    "ignore": "dist.js"
+    "ignore": "lib"
   }
 }
