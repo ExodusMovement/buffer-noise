@@ -1,18 +1,20 @@
-# buffer-expand
-[![npm](https://img.shields.io/npm/v/buffer-expand.svg)](https://npmjs.com/package/buffer-expand)
-[![Travis branch](https://img.shields.io/travis/ExodusMovement/buffer-expand/master.svg)](https://travis-ci.org/ExodusMovement/buffer-expand)
+# buffer-noise
+[![npm](https://img.shields.io/npm/v/buffer-noise.svg)](https://npmjs.com/package/buffer-noise)
+[![Travis branch](https://img.shields.io/travis/ExodusMovement/buffer-noise/master.svg)](https://travis-ci.org/ExodusMovement/buffer-noise)
 
 Expand a buffer to a specified length. If the buffer is smaller than the specified length, the remaining space is filled with random bytes. A 32-bit Unsigned Big-Endian Integer containing the length of the data is always prepended to the buffer.
 
+This module can be used for obfuscating an encrypted file's size for plausible deniability.
+
 ## Installation
 
-    npm install buffer-expand
+    npm install buffer-noise
 
 ## Usage
 
 ```js
 const size = 25
-const { expand, shrink } = require('buffer-expand')(size)
+const { expand, shrink } = require('buffer-noise')(size)
 
 const data = Buffer.from('Hello World!')
 const newData = expand(data)
