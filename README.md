@@ -1,6 +1,6 @@
 # buffer-noise
 [![npm](https://img.shields.io/npm/v/buffer-noise.svg)](https://npmjs.com/package/buffer-noise)
-[![Travis branch](https://img.shields.io/travis/ExodusMovement/buffer-noise/master.svg)](https://travis-ci.org/ExodusMovement/buffer-noise)
+[![GitHub Actions Status](https://img.shields.io/github/workflow/status/ExodusMovement/buffer-noise/CI/master)](https://github.com/ExodusMovement/buffer-noise/actions/workflows/ci.yml?query=branch%3Amaster)
 
 Expand a buffer to a specified length. If the buffer is smaller than the specified length, the remaining space is filled with random bytes. A 32-bit Unsigned Big-Endian Integer containing the length of the data is always prepended to the buffer.
 
