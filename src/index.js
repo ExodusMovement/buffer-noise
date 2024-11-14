@@ -2,7 +2,7 @@ const { randomBytes } = require('@exodus/crypto/randomBytes')
 
 /**
  * @param {number} size
- * @return {Uint8Array|*|{expand(Buffer): Buffer, shrink(Buffer): Buffer}}
+ * @returns {{expand(Buffer): Buffer, shrink(Buffer): Buffer}}
  */
 module.exports = function (size) {
   return {
