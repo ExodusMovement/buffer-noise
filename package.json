@@ -23,13 +23,7 @@
   },
   "devDependencies": {
     "@exodus/test": "^1.0.0-rc.63",
-    "babel-eslint": "^7.2.1",
-    "make-dir-cli": "^3.0.0",
     "standard": "^10.0.0"
-  },
-  "standard": {
-    "parser": "babel-eslint",
-    "ignore": "lib"
   },
   "dependencies": {
     "@exodus/crypto": "^1.0.0-rc.14"
