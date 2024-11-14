@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "author": "Exodus Movement, Inc.",
-  "main": "./lib/index.js",
+  "main": "./src/index.js",
   "files": [
     "src/"
   ],
@@ -17,24 +17,15 @@
     "url": "git+https://github.com/ExodusMovement/buffer-noise.git"
   },
   "scripts": {
-    "build": "make-dir lib && flow-remove-types ./src/index.js > ./lib/index.js",
     "lint": "standard",
-    "prepare": "npm run build",
-    "pretest": "npm run build",
-    "test": "npm run lint && flow check && npm run unit",
-    "unit": "tape -r flow-remove-types/register ./test/index.js | tf-spec"
+    "test": "npm run lint && npm run unit",
+    "unit": "exodus-test"
   },
   "devDependencies": {
-    "@tap-format/spec": "^0.2.0",
-    "babel-eslint": "^7.2.1",
-    "flow-bin": "^0.43.0",
-    "flow-remove-types": "^1.2.0",
-    "make-dir-cli": "^3.0.0",
-    "standard": "^10.0.0",
-    "tape": "^4.6.3"
+    "@exodus/test": "^1.0.0-rc.63",
+    "standard": "^10.0.0"
   },
-  "standard": {
-    "parser": "babel-eslint",
-    "ignore": "lib"
+  "dependencies": {
+    "@exodus/crypto": "^1.0.0-rc.14"
   }
 }
