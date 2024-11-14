@@ -1,4 +1,4 @@
-const test = require('tape')
+const test = require('@exodus/test/tape')
 const crypto = require('crypto')
 const createExpander = require('..')
 
