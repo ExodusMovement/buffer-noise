@@ -1,3 +1,7 @@
+# 1.0.1 / 2024-11-15
+
+- Use platform-agnostic randombytes implementation ([#6](https://github.com/ExodusMovement/buffer-noise/pull/6))
+
 # 1.0.0 / 2022-11-08
 
 - BREAKING: Require Node v16+ ([#3](https://github.com/ExodusMovement/buffer-noise/pull/3))
